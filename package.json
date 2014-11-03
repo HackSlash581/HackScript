@@ -1,0 +1,19 @@
+{
+  "name": "HackScript",
+  "version": "0.0.0",
+  "description": "Small game scripting language",
+  "main": "./lib/hackScript.js",
+  "scripts": {
+    "test": "mocha test/testHS.js"
+  },
+  "author": "Chris Hogan",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "should": "^4.1.0"
+  },
+  "dependencies": {
+    "jison": "^0.4.15",
+    "source-map": "^0.1.40"
+  }
+}
