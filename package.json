@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "Small game scripting language",
   "main": "./lib/hackScript.js",
+  "directories": { "lib": "./lib" },
   "scripts": {
     "test": "mocha test/testHS.js"
   },
@@ -15,5 +16,8 @@
   "dependencies": {
     "jison": "^0.4.15",
     "source-map": "^0.1.40"
+  },
+  "bin": {
+    "hackScript.js": "./bin/hackScript.js"
   }
 }
