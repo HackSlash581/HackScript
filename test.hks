@@ -1,0 +1,5 @@
+every 2000: heal
+
+if enemy < 2: attack
+
+
