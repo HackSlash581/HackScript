@@ -10,12 +10,12 @@
   "author": "Chris Hogan",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^2.0.1",
-    "should": "^4.1.0"
+    "mocha": "~2.0.1",
+    "should": "~4.1.0"
   },
   "dependencies": {
-    "jison": "^0.4.15",
-    "source-map": "^0.1.40"
+    "jison": "~0.4.15",
+    "source-map": "~0.1.40"
   },
   "bin": {
     "hackScript.js": "./bin/hackScript.js"
