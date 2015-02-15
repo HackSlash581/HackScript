@@ -6,17 +6,17 @@ describe('Assignment', function() {
   describe('with single ID', function() {
     it('should recognize ID: INT', function() {
       var result = compileLine("life: 20");
-      should.strictEqual(result, "var life = 20;\n");
+      should.strictEqual(result, "life = 20;\n");
     })
 
     it('should recognize ID: STRVAL', function() {
       var result = compileLine('name: "Peg Pelvis Pete"');
-      should.strictEqual(result, 'var name = "Peg Pelvis Pete";\n');
+      should.strictEqual(result, 'name = "Peg Pelvis Pete";\n');
     })
 
     it('should recognize ID: ID', function() {
       var result = compileLine("attack: fireMagic");
-      should.strictEqual(result, "var attack = fireMagic;\n");
+      should.strictEqual(result, "attack = fireMagic;\n");
     })
 
     it('should not recognize INT on LHS', function() {
@@ -43,17 +43,17 @@ describe('Assignment', function() {
   describe('with propertychain', function() {
     it('should recognize ID.ID: INT', function() {
       var result = compileLine("player.life: 100");
-      should.strictEqual(result, "var player.life = 100;\n");
+      should.strictEqual(result, "player.life = 100;\n");
     })
 
     it('should recognize ID.ID.ID: INT', function() {
       var result = compileLine("player.attack.power: 15");
-      should.strictEqual(result, "var player.attack.power = 15;\n");
+      should.strictEqual(result, "player.attack.power = 15;\n");
     })
 
     it('should recognize ID.ID: ID.ID', function() {
       var result = compileLine("player.name: enemy.name");
-      should.strictEqual(result, "var player.name = enemy.name;\n");
+      should.strictEqual(result, "player.name = enemy.name;\n");
     })
   })
 })
