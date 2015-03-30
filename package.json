@@ -19,5 +19,8 @@
   },
   "bin": {
     "hackScript.js": "./bin/hackScript.js"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
   }
 }
