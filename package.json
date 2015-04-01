@@ -1,6 +1,6 @@
 {
   "name": "hackscript",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Small game scripting language",
   "main": "./lib/hackScript.js",
   "directories": { "lib": "./lib" },
